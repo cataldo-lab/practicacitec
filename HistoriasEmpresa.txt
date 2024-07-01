@@ -1,0 +1,51 @@
+
+
+Loggin:
+________________________________________________________________
+
+"Empresa" tiene validaciones de seguridad al logearse
+
+"Empresa" Hace solicitud de trabajo a lab Citec, mediante correo.
+
+"Empresa" ve los estados de sus proyectos con codigos de colores
+
+"Empresa" si esta bloqueada, no puede entrar al sistema hasta ponerse al dia en finanzas
+
+"Empresa" si esta al dia, o al corriente puede entrar al sistema a ver el estado de sus proyectos
+
+
+
+
+Pagos:
+________________________________________________________________
+Empresa 
+
+"Empresa" ve su estado de pagos asociados a proyectos.
+
+
+"Empresa" recibe notificacion si los pagos estan atrasados
+
+"Empresa" recibe notificacion de pagos realizados
+
+Empresa recibe copia de boleta y/o factura
+
+"Empresa" terminado los pagos de un proyecto, puede descargar el informe
+
+"Empresa" puede hacer feedback del informe.
+
+
+________________________________________________________________
+
+Dudas: [Nombre o categoria]
+-Datos Empresa cliente, ficticios.[PK "rut empresa", razon social, fono, cuenta]
+-Datos usuario, "personal citec" [PK "Rut personal citec", PK-FK: "Rut empresa citec",..]
+-Datos factura. [PK-FK: "Rut ubb finanzas",..]
+-Datos boleta [PK-FK: "Rut ubb finanzas",..]
+-Datos de los proyectos.--> esta acodiado a un rut.. 
+    [rut empresa, id proyecto, tipo_servicios, cotizacionUF, EstadoPago(Regular/Atrasado), EstadoProyecto(activo/Bloqueado), EstadoTermino(Si/No)]
+-Datos ficticios citec.[PK:"Rut empresa citec"]
+
+
+
+
+
